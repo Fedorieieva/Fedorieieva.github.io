@@ -5,7 +5,7 @@ body {
   flex-direction: column;
 }
 
-.header {
+header {
   background-color: rgb(161, 249, 249);
   padding: 0 15px;
   min-height: 15vh;
@@ -14,18 +14,19 @@ body {
   justify-content: space-between;
 }
 
-header h1 {
+.header h1 {
   font-size: 24px;
   font-weight: bold;
 }
 
 .header-navigation-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   gap: 25px;
 }
 
-.header__nav-link a {
+.header-navigation-link a {
   color: black;
   text-decoration: none;
 }
@@ -39,6 +40,7 @@ header h1 {
   background-color: rgba(241, 237, 122, 0.997);
   min-height: 100%;
   min-width: 15%;
+  max-width: 20%;
   padding: 0 15px;
 }
 
