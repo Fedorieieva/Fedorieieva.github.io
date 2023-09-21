@@ -112,6 +112,7 @@ header h1 {
 }
 
 .main-content-slogan {
+  background-color: aliceblue;
   padding: 10px;
   display: flex;
   flex-direction: column;
