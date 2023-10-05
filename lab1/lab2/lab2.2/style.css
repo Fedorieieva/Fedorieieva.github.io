@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+header {
+  background-color: rgb(161, 249, 249);
+  padding: 0 15px;
+  min-height: 15vh;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-navigation-list {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 25px;
+  list-style: none;
+}
+
+.header-navigation-list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header-navigation-link a {
+  color: black;
+  text-decoration: none;
+}
+
+.main {
+  min-height: 85vh;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+}
+
+.main-sidebar {
+  background-color: rgba(241, 237, 122, 0.997);
+  min-height: 100%;
+  padding: 0 15px;
+}
+
+.main-sidebar p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 45px;
+}
+
+.main-wrapper {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 75% auto;
+  grid-gap: 20px;
+}
+
+.main-content-left {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  justify-content: space-between;
+}
+
+.main-content-right {
+  background-color: rgba(241, 237, 122, 0.997);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main-content-right img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+.main-content-text {
+  padding: 10px;
+}
+
+.main-content-text h1 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-content-text h3 {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.main-content-text ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+.main-content-text li {
+  margin-bottom: 10px;
+}
+
+.main-content-slogan {
+  width: 100%;
+  background-color: aliceblue;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-footer {
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: rgb(161, 249, 249);
+  display: grid;
+}
+
+.main-footer p {
+  text-align: right;
+  justify-content: end;
+}
